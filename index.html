@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <title>Calculator</title>
+</head>
+<body> 
+    <div class="content">
+        <div class="f1">
+            <b class="flag" style="margin-left: 1em;">Screen:</b>
+            <textarea id="screen" cols="" rows="10" readonly style="margin-left: 1em;padding: 1em; width: 250px; margin-top: 3em;"></textarea>
+        </div>
+
+        <div class="f2">
+            <b class="flag">Input One:</b>
+            <input type="number" id="input1" class="fname" style="margin-left: 1em; padding: 1em; width: 250px;"/>
+        </div> 
+
+        <div class="f2" style="padding: 1em;">
+            <b class="flag">Operation:</b>
+            <select name="operator" id="operator">
+                <option value="+">Addition</option>
+                <option value="-">Subtract</option>
+                <option value="*">Multiply</option>
+                <option value="/">Divide</option>
+            </select>
+        </div>
+
+        <div>
+            <b class="flag">Input Two</b>
+            <input type="number" id="input2" class="fname" style="margin-left: 1em; padding: 1em; width: 250px;"/> 
+        </div>
+
+        <button onclick="btnClick()"><b style="font-size: small;">Calculator</b></button>
+
+
+    </div>
+    
+    <script src="script.js"></script>   
+</body>
+</html>
